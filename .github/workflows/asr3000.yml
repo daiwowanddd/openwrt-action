@@ -141,9 +141,9 @@ jobs:
       with:
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
-          ${{ env.FIRMWARE }}/*sysupgrade*.*
-          ${{ env.FIRMWARE }}/*factory*.*
-          ${{ env.FIRMWARE }}/*recovery*.*
+          ${{ env.FIRMWARE }}/*sysupgrade*
+          ${{ env.FIRMWARE }}/*factory*
+          ${{ env.FIRMWARE }}/*recovery*
 
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
