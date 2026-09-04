@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: ct3003 6.6 编译
+name: ct3003 25.12
 
 on:
   repository_dispatch:
